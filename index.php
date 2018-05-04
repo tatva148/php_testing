@@ -45,11 +45,11 @@
 </head>
 <body>
 	<h3>Test with autocomplete off in form itself</h3>
-<form autocomplete="off">
+<form >
 	<label>City:</label>
-	<input type="text" name="city" ><br><br><br>
+	<input type="text" name="city" autocomplete="disabled"><br><br><br>
 	<label>Address:</label>
-	<textarea name="address" ></textarea>
+	<input name="nearest_airport" autocomplete="disabled" >
 </form>
 	<h1>===========================</h1>
 	<h3>Test with autocomplete off in inidividual inputs</h3>
@@ -57,7 +57,7 @@
 	<label>City:</label>
 	<input type="text" name="city" autocomplete="off"><br><br><br>
 	<label>Address:</label>
-	<textarea name="address" autocomplete="off"></textarea>
+	<input name="nearest_airport" autocomplete="off">
 </form>
 
 	<h1>===========================</h1>
@@ -66,7 +66,7 @@
 	<label>City:</label>
 	<input type="text" name="city" autocomplete="" auto-complete="something-new"><br><br><br>
 	<label>Address:</label>
-	<textarea name="address" autocomplete="" value="&nbsp;"></textarea>
+	<input name="nearest_airport" autocomplete="" value="&nbsp;">
 	<input type="submit" name="submit" value="submit">
 </form>
 <h3>Tests Solutions</h3>
