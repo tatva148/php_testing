@@ -25,7 +25,7 @@
         function scrollUP(){ //Adds keyboard active class
             i = $('.user').offset().top;
             while(i>50){
-                $('.login-modal').scrollTop($('.login-modal').scrollTop()+i);
+                $('.login-modal').scrollTop($('.login-modal').scrollTop()+1);
                 i--;
             }
         }
