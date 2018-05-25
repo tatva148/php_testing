@@ -30,13 +30,13 @@
         <div class="form-group">
           <label>User name</label>
           <div class="form-control-outer">
-            <input type="text" placeholder="" name="username" class="form-control" id="id_username">
+            <input type="text" placeholder="" name="username" class="form-control user" id="user">
           </div>
         </div>
         <div class="form-group">
           <label>Password</label>
           <div class="form-control-outer">
-            <input type="password" placeholder="" class="form-control" id="id_password">
+            <input type="password" placeholder="" class="form-control pwd" id="pwd">
           </div>
         </div>
         <div class="row login-options">
@@ -66,38 +66,38 @@
 </div>
 
 </body>
-<script>
-	// initialScreenSize = screen.height, //Checks initial height of the screen
-        var initialScreenSize = window.innerHeight; //Checks initial height of the screen
-         $(document).on('click','input',function(){
-            console.log('asd');
-            if(check()){
-                scrollUP();
-            }else{
-                scrollDown();
-            };    
-         }) //Setting interval to check screensize changes / not
+<script src='test.js'>
+	// // initialScreenSize = screen.height, //Checks initial height of the screen
+ //        var initialScreenSize = window.innerHeight; //Checks initial height of the screen
+ //         $(document).on('click','input',function(){
+ //            console.log('asd');
+ //            if(check()){
+ //                scrollUP();
+ //            }else{
+ //                scrollDown();
+ //            };    
+ //         }) //Setting interval to check screensize changes / not
         
         
-        function check(){ //Actual screen height change checking code
-            // var kbactive = screen.height;
-            var kbactive = window.innerHeight;
-            if(initialScreenSize > kbactive ){
-                scrollUP();
-                return true;
-            }else{
-                scrollDown();
-                return false;    
-            }
-        }
+ //        function check(){ //Actual screen height change checking code
+ //            // var kbactive = screen.height;
+ //            var kbactive = window.innerHeight;
+ //            if(initialScreenSize > kbactive ){
+ //                scrollUP();
+ //                return true;
+ //            }else{
+ //                scrollDown();
+ //                return false;    
+ //            }
+ //        }
         
-        function scrollUP(){ //Adds keyboard active class
-            $('.login-modal').scrollTop(138)
-        }
+ //        function scrollUP(){ //Adds keyboard active class
+ //            $('.login-modal').scrollTop(138)
+ //        }
         
-        function scrollDown(){ //Removes keyboard active class
-            $('.login-modal').scrollTop(0)
-        }
+ //        function scrollDown(){ //Removes keyboard active class
+ //            $('.login-modal').scrollTop(0)
+ //        }
    
 </script>
 </html>
